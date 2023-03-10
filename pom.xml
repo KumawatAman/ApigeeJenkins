@@ -2,9 +2,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>Neosalpha.com</groupId>
-    <artifactId>Mock-v1</artifactId>
+    <artifactId>${proxyname}</artifactId>
     <version>1.0.0</version>
-    <name>Mock-v1</name>
+    <name>${proxyname}</name>
     <packaging>pom</packaging>
 
     <properties>
