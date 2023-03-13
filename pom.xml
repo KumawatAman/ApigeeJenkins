@@ -11,7 +11,7 @@
         <profile>
             <id>${environment}</id>
             <properties>
-                <apigee.profile>${environment}</apigee.profile>
+                <apigee.profile>kukil.bora@neosalpha.com</apigee.profile>
                 <apigee.hosturl>https://api.enterprise.apigee.com</apigee.hosturl>
                 <apigee.apiversion>v1</apigee.apiversion>
                 <apigee.org>kukilbora-eval</apigee.org>
