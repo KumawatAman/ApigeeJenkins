@@ -15,7 +15,7 @@
                 <apigee.hosturl>https://api.enterprise.apigee.com</apigee.hosturl>
                 <apigee.apiversion>v1</apigee.apiversion>
                 <apigee.org>kukilbora-eval</apigee.org>
-                <apigee.env>${environment}</apigee.env>
+                <apigee.env>${env.environment}</apigee.env>
                 <apigee.username>${username}</apigee.username>
                 <apigee.password>${password}</apigee.password>
                 <apigee.authtype>basic</apigee.authtype> <!-- optional: oauth|basic(default) -->
