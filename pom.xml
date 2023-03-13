@@ -7,40 +7,35 @@
     <name>${proxyname}</name>
     <packaging>pom</packaging>
 
+   <properties>
+            <project.root.dir>${basedir}</project.root.dir>
+            <target.root.dir>${basedir}/target</target.root.dir>
+            <deployment.suffix>${user.name}</deployment.suffix>
+            <apigee.hosturl>https://api.enterprise.apigee.com</apigee.hosturl>
+            <apigee.apiversion>v1</apigee.apiversion>
+            <apigee.username>${username}</apigee.username>
+            <apigee.password>${password}</apigee.password>
+            <apigee.options>${options}</apigee.options>
+            <apigee.revision>${revision}</apigee.revision>
+            <apigee.override.delay>10</apigee.override.delay>
+            <apigee.authtype>${authtype}</apigee.authtype> <!-- optional: oauth|basic(default) -->
+            <apigee.tokenurl>${tokenurl}</apigee.tokenurl> <!-- optional: oauth -->
+            <apigee.bearer>${bearer}</apigee.bearer> <!-- optional: Bearer token override -->
+    </properties>
+
+    <!-- This is where you add the environment specific properties under various profile names -->
     <profiles>
         <profile>
-            <id>${environment}</id>
-            <properties>
-                <apigee.profile>kukil.bora@neosalpha.com</apigee.profile>
-                <apigee.hosturl>https://api.enterprise.apigee.com</apigee.hosturl>
-                <apigee.apiversion>v1</apigee.apiversion>
-                <apigee.org>kukilbora-eval</apigee.org>
-                <apigee.env>${environment}</apigee.env>
-                <apigee.username>${username}</apigee.username>
-                <apigee.password>${password}</apigee.password>
-                <apigee.authtype>basic</apigee.authtype> <!-- optional: oauth|basic(default) -->
-                <apigee.tokenurl>https://login.apigee.com/oauth/token</apigee.tokenurl> <!-- optional: oauth -->
-                <apigee.mfatoken>${mfatoken}</apigee.mfatoken> <!-- optional: mfa -->
-                <apigee.clientid>${clientId}</apigee.clientid> <!-- optional: Oauth Client Id - Default is edgecli-->
-                <apigee.clientsecret>${clientSecret}</apigee.clientsecret> <!-- optional: Oauth Client Secret Default is edgeclisecret-->
-                <apigee.bearer>${bearer}</apigee.bearer> <!-- optional: Bearer token override -->
-                <apigee.refresh>${refresh}</apigee.refresh> <!-- optional: Refresh token override -->
-            </properties>
-        </profile>
-    </profiles>
-
-    <!-- <profiles>
-        <profile>
-            <id>prod</id>
+            <id>test</id>
             <properties>
                 <org>kukilbora-eval</org>
                 <apigee.org>kukilbora-eval</apigee.org>
                 <option>update</option>
                 <apigee.profile>test</apigee.profile>
-                <apigee.env>${env}</apigee.env>
+                <apigee.env>${environment}</apigee.env>
             </properties>
         </profile>
-    </profiles> -->
+    </profiles>
 
  <build>
         <plugins> 
