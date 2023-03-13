@@ -33,7 +33,20 @@
                 <apigee.org>kukilbora-eval</apigee.org>
                 <option>update</option>
                 <apigee.profile>test</apigee.profile>
-                <apigee.env>test</apigee.env>
+                <apigee.env>${env}</apigee.env>
+            </properties>
+        </profile>
+    </profiles>
+
+    <profiles>
+        <profile>
+            <id>prod</id>
+            <properties>
+                <org>kukilbora-eval</org>
+                <apigee.org>kukilbora-eval</apigee.org>
+                <option>update</option>
+                <apigee.profile>test</apigee.profile>
+                <apigee.env>${env}</apigee.env>
             </properties>
         </profile>
     </profiles>
