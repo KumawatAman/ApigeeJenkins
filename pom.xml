@@ -21,6 +21,7 @@
             <apigee.authtype>${authtype}</apigee.authtype> <!-- optional: oauth|basic(default) -->
             <apigee.tokenurl>${tokenurl}</apigee.tokenurl> <!-- optional: oauth -->
             <apigee.bearer>${bearer}</apigee.bearer> <!-- optional: Bearer token override -->
+            <apigee.target.url>${url}</apigee.target.url>
     </properties>
 
     <!-- This is where you add the environment specific properties under various profile names -->
@@ -38,7 +39,8 @@
     </profiles>
 
  <build>
-        <plugins>
+        <plugins> 
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
