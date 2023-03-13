@@ -27,7 +27,7 @@
     <!-- This is where you add the environment specific properties under various profile names -->
     <profiles>
         <profile>
-            <id>test</id>
+            <id>${env}</id>
             <properties>
                 <org>kukilbora-eval</org>
                 <apigee.org>kukilbora-eval</apigee.org>
@@ -38,7 +38,7 @@
         </profile>
     </profiles>
 
-    <profiles>
+    <!-- <profiles>
         <profile>
             <id>prod</id>
             <properties>
@@ -49,7 +49,7 @@
                 <apigee.env>${env}</apigee.env>
             </properties>
         </profile>
-    </profiles>
+    </profiles> -->
 
  <build>
         <plugins> 
