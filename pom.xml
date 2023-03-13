@@ -32,7 +32,7 @@
                 <org>kukilbora-eval</org>
                 <apigee.org>kukilbora-eval</apigee.org>
                 <option>update</option>
-                <apigee.profile>test</apigee.profile>
+                <apigee.profile>${username}</apigee.profile>
                 <apigee.env>${env}</apigee.env>
             </properties>
         </profile>
